@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Your Own Gift Box - Lovely Box Egypt</title>
+    <meta name="description" content="Create a personalized gift box at Lovely Box Egypt. Choose style, occasion, and add your message.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Lovely Box</h1>
+            <button class="hamburger">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ready-made.html">Ready-Made</a></li>
+                    <li><a href="custom.html">Custom</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="custom-form-section">
+            <div class="container">
+                <h2>Design Your Own Gift Box</h2>
+                <p>Looking for a gift that really says you care? Design your box, we'll wrap the love.</p>
+                <form id="custom-form">
+                    <div class="form-group">
+                        <label for="style">Gift Style:</label>
+                        <select id="style" required>
+                            <option value="">Select Style</option>
+                            <option value="Box">Box</option>
+                            <option value="Basket">Basket</option>
+                            <option value="Surprise Pouch">Surprise Pouch</option>
+                            <option value="Digital Gift">Digital Gift</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="occasion">Occasion:</label>
+                        <select id="occasion" required>
+                            <option value="">Select Occasion</option>
+                            <option value="Birthday">Birthday</option>
+                            <option value="Anniversary">Anniversary</option>
+                            <option value="Congratulations">Congratulations</option>
+                            <option value="Thank You">Thank You</option>
+                            <option value="Just Because">Just Because</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient">Recipient (optional):</label>
+                        <input type="text" id="recipient" placeholder="e.g. Mom, Best Friend">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Personal Message:</label>
+                        <textarea id="message" placeholder="Describe how you want it..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="upload">Upload Images (optional):</label>
+                        <input type="file" id="upload" multiple accept="image/*">
+                    </div>
+                    <button type="button" id="submit-custom">Submit</button>
+                </form>
+                <div id="whatsapp-section" style="display: none;">
+                    <p>Thank you! Proceed via WhatsApp to finalize your order.</p>
+                    <a id="whatsapp-link" href="#" class="cta-button">Proceed via WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact: WhatsApp +20 123 456 7890 | Email: info@lovelybox.eg | Instagram: <a href="https://instagram.com/lovely_box_eg">@lovely_box_eg</a></p>
+            <p>&copy; 2023 Lovely Box. All rights reserved. Based in Cairo, Egypt.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/201234567890?text=Hi%20Lovely%20Box%2C%20I%E2%80%99d%20like%20to%20order%20a%20gift%20box." class="whatsapp-float">
+        <img src="https://via.placeholder.com/50x50?text=WA" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
